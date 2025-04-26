@@ -14,10 +14,9 @@ CORS(app)  # Cho phép tất cả các nguồn truy cập
 tf.config.set_visible_devices([], 'GPU')
 model = load_model('cat_dog_mobilenetv2.h5')
 
-# Define image size expected by the model (e.g., 224x224 for MobileNetV2)
+# Define image size expected by the model
 IMG_SIZE = (224, 224)
 
-# Function to predict the image label
 def predict_image(img):
     img = img.resize(IMG_SIZE)
     img_array = np.array(img)

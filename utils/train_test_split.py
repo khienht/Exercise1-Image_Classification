@@ -10,7 +10,7 @@ output_base_dir = 'dataset1/split_dataset'
 for folder in ['train/Cat', 'train/Dog', 'test/Cat', 'test/Dog']:
     os.makedirs(os.path.join(output_base_dir, folder), exist_ok=True)
 
-# Hàm dùng để chia ảnh cho từng lớp
+# Chia ảnh cho từng lớp
 def split_dataset(class_name, train_ratio=0.8):
     src_folder = os.path.join(source_dir, class_name)
     all_images = [img for img in os.listdir(src_folder) if img.lower().endswith(('.jpg', '.png', '.jpeg'))]
@@ -31,7 +31,6 @@ def split_dataset(class_name, train_ratio=0.8):
         dst_path = os.path.join(output_base_dir, 'test', class_name, img)
         shutil.copy2(src_path, dst_path)
 
-# Chia tập dữ liệu
 split_dataset('Cat')
 split_dataset('Dog')
 
