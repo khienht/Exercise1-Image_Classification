@@ -4,8 +4,9 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
 import io
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)  # Cho phép tất cả các nguồn truy cập
 
 # Load the trained model
 model = load_model('cat_dog_mobilenetv2.h5')
