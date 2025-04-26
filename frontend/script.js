@@ -6,7 +6,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
     formData.append('image', imageFile);
 
     try {
-        const response = await fetch('https://your-render-app-url.com/predict', {
+        const response = await fetch('https://image-classification-knpj.onrender.com', {
             method: 'POST',
             body: formData,
         });
