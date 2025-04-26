@@ -6,10 +6,12 @@ from PIL import Image
 import io
 from flask_cors import CORS
 import os
+import tensorflow as tf
 app = Flask(__name__)
 CORS(app)  # Cho phép tất cả các nguồn truy cập
 
 # Load the trained model
+tf.config.set_visible_devices([], 'GPU')
 model = load_model('cat_dog_mobilenetv2.h5')
 
 # Define image size expected by the model (e.g., 224x224 for MobileNetV2)
