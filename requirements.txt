@@ -1,0 +1,4 @@
+Flask==2.2.2
+tensorflow==2.10.0
+pillow==9.1.0
+gunicorn==20.1.0  # For deployment on Render
