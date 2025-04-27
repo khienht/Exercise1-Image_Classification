@@ -35,7 +35,7 @@ For running the demo, the model is deployed and tested on a local server. The en
 3. Install the dependencies using:
    ```bash
    pip install -r requirements.txt
-4. Run the demo by executing the demo.py file:
+4. Insert the link or filename of the image you want to classify into the 'img_path' variable inside demo.py.
+5. Run the demo by executing the demo.py file:
   ```bash
    python utils/demo.py
-
