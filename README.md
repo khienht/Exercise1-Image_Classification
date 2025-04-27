@@ -11,8 +11,8 @@
 
 ## Table of Contents
 * [Environment settings](#environment-settings)
+* [Report](#report)
 * [Steps to Run the Demo Locally](#steps-to-run-the-demo-locally)
-
 ## Environment Settings
 
 ### Training Environment (Kaggle)
@@ -26,6 +26,9 @@ For running the demo, the model is deployed and tested on a local server. The en
 - **Virtual Environment**: Use a virtual environment for installing dependencies.
 - **Required Libraries**: All the required libraries can be installed using the `requirements.txt` file provided.
 
+## Report
+[Link to the report for Excercise 1 and Excercise 2.](https://github.com/khienht/Exercise1-Image_Classification/tree/main/Report.pdf)
+
 ## Steps to Run the Demo Locally:
 1. Clone the repository.
 2. Create and activate a virtual environment.
@@ -35,3 +38,4 @@ For running the demo, the model is deployed and tested on a local server. The en
 4. Run the demo by executing the demo.py file:
   ```bash
    python utils/demo.py
+
